@@ -32,3 +32,15 @@ console.log(pen);
 console.log(fanKk,chair,pen,tableBlack);
 
 //using var and let hw for 4 variables
+
+var nepalKtm="capital";
+nepalKtm="Rajdhani";
+console.log(nepalKtm);
+let firstName="Kuber";
+firstName="kk";
+console.log(firstName);
+fNamme="kkk";
+console.log(fNamme);
+var helloKk="hello";
+helloKk="hlo";
+console.log(helloKk);
