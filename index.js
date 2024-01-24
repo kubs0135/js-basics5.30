@@ -54,3 +54,9 @@ const id="ncc kuber";
 console.log(id);
 const naxsax="sir";
 console.log(naxsax);
+
+const isAdult=confirm("are you an adult");
+console.log(isAdult);
+const name=prompt("what's your name");
+console.log(name);
+alert("hello from kubs");
