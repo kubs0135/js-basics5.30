@@ -44,3 +44,6 @@ console.log(fNamme);
 var helloKk="hello";
 helloKk="hlo";
 console.log(helloKk);
+let mobilePhone="iphun";
+mobilePhone="android";
+console.log(mobilePhone);
