@@ -55,8 +55,50 @@ console.log(id);
 const naxsax="sir";
 console.log(naxsax);
 
-const isAdult=confirm("are you an adult");
+/*const isAdult=confirm("are you an adult");
 console.log(isAdult);
 const name=prompt("what's your name");
 console.log(name);
 alert("hello from kubs");
+const nam=prompt("what's your age");
+console.log(nam);*/
+
+/*
+    if ko bela gender==="m";
+*/
+
+
+/*const gender=prompt("what is your gender");
+switch(gender){
+    case "m":
+    alert("you are male");
+    break;
+    case "f":
+    alert("you are female");
+    break;
+    default:
+        alert("invalid input");
+} */
+
+const name=prompt("what is your name");
+const pw=prompt("what is your pawwword");
+if(name===pw){
+    alert(`welcome ${name}`);   // `` backtick
+}
+else{
+    alert("invalid");
+}
+
+
+/*const name="kuber",password="kk";
+const kk=prompt("what is your name?");
+const k=promt("what is pw");
+if(kk===name && password===k){
+    alert("welcome");
+
+}
+else{
+    alert("invalid");
+}
+
+*/
