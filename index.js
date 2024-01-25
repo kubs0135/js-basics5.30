@@ -110,3 +110,6 @@ const numberOne=parseInt(prompt("give me 1st number"));
 const numberSecond=parseInt(prompt("give me 2nd number"));
 const add=numberOne+numberSecond;
 alert(`the sum is ${add}`);
+
+const namek=prompt("enter name");
+alert(`the user is ${namek}`);
