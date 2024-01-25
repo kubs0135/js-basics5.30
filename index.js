@@ -133,6 +133,14 @@ n11===pwww?alert("welcome"):alert("invalid");*/
 /*const month=prompt("enter month");
 month==="jan"?alert("january"):month==="feb"?alert("fabruary"):month==="mar"?alert("march"):alert("not jan,feb,mar");
 */
-const name=prompt("enter name");
-const number=parseInt(prompt("enter time"));
-(number>=5 || number<12)?alert(`good morning ${name}`):(number>=12 || number <3)?alert('good afternoon ${name}'):alert(`good evening ${name}`);
+/*const name=prompt("enter name");
+const number=parseInt(prompt("enter time")); 
+number>=5 && number<=12?alert(`good morning ${name}`):number>=1 && number <3?alert('good afternoon ${name}'):alert(`good evening ${name}`);
+*/
+//wap for multiplicatuion tale for 2,3,5
+
+let i=1;
+let j=2;
+for(i=1;i<=10;i++){
+    console.log(i*j);
+}
