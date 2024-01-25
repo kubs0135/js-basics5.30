@@ -80,14 +80,14 @@ switch(gender){
         alert("invalid input");
 } */
 
-const name=prompt("what is your name");
+/*const name=prompt("what is your name");
 const pw=prompt("what is your pawwword");
 if(name===pw){
     alert(`welcome ${name}`);   // `` backtick
 }
 else{
     alert("invalid");
-}
+} */
 
 
 /*const name="kuber",password="kk";
@@ -102,3 +102,11 @@ else{
 }
 
 */
+
+//wap that asks user for
+//addition of 2 numbers and alert the result
+
+const numberOne=parseInt(prompt("give me 1st number"));
+const numberSecond=parseInt(prompt("give me 2nd number"));
+const add=numberOne+numberSecond;
+alert(`the sum is ${add}`);
