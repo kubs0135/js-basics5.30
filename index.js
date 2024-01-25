@@ -101,7 +101,7 @@ else{
     alert("invalid");
 }
 
-*/
+
 
 //wap that asks user for
 //addition of 2 numbers and alert the result
@@ -109,7 +109,30 @@ else{
 const numberOne=parseInt(prompt("give me 1st number"));
 const numberSecond=parseInt(prompt("give me 2nd number"));
 const add=numberOne+numberSecond;
-alert(`the sum is ${add}`);
+alert(`the sum of  ${numberOne} and ${numberSecond} is ${add}`);
+*/
 
+/*
 const namek=prompt("enter name");
 alert(`the user is ${namek}`);
+
+const sch=prompt("enter school name is");
+alert(`your school name is ${sch}`);
+*/
+
+//type conversion /type casting
+
+//ternary operator(ES6)
+
+//condition?true:false;
+
+/*const n11=prompt("name");
+const pwww=prompt("pw");
+n11===pwww?alert("welcome"):alert("invalid");*/
+
+/*const month=prompt("enter month");
+month==="jan"?alert("january"):month==="feb"?alert("fabruary"):month==="mar"?alert("march"):alert("not jan,feb,mar");
+*/
+const name=prompt("enter name");
+const number=parseInt(prompt("enter time"));
+(number>=5 || number<12)?alert(`good morning ${name}`):(number>=12 || number <3)?alert('good afternoon ${name}'):alert(`good evening ${name}`);
