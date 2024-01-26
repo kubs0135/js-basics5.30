@@ -139,7 +139,7 @@ number>=5 && number<=12?alert(`good morning ${name}`):number>=1 && number <3?ale
 */
 //wap for multiplicatuion tale for 2,3,5
 
-let i=1;
+/*let i=1;
 let j=2;
 console.log("the multiplication table for 2 is:");
 for(i=1;i<=10;i++){
@@ -155,9 +155,25 @@ while(i1<=10){
 }
 
 let i2=1;
-let j2=5;
+const j2=5;
 console.log("Multiplication table for 5 is:");
 do{
     console.log(i2*j2);
     i2++;
 }while(i2<=10);
+*/
+
+//const kkkk=prompt("enter a number");
+//kkkk%3===0?alert("its multiple of 3"):kkkk%7===0?("its multiple of 7"):alert("its not multiple of both")
+
+
+const a=parseInt(prompt("enter 1st number"));
+const b=parseInt(prompt("enter 2nd number"));
+let sum=a+b;
+if(a===b){
+    sum=sum*3;
+    alert(`its tripled is:${sum}`);
+}
+else{
+    alert(`${sum}`);
+}
