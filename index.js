@@ -141,6 +141,23 @@ number>=5 && number<=12?alert(`good morning ${name}`):number>=1 && number <3?ale
 
 let i=1;
 let j=2;
+console.log("the multiplication table for 2 is:");
 for(i=1;i<=10;i++){
     console.log(i*j);
 }
+
+let i1=1;
+let j1=3;
+console.log("Multiplication table for 3 is:");
+while(i1<=10){
+    console.log(i1*j1);
+    i1++;
+}
+
+let i2=1;
+let j2=5;
+console.log("Multiplication table for 5 is:");
+do{
+    console.log(i2*j2);
+    i2++;
+}while(i2<=10);
