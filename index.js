@@ -167,7 +167,7 @@ do{
 //kkkk%3===0?alert("its multiple of 3"):kkkk%7===0?("its multiple of 7"):alert("its not multiple of both")
 
 
-const a=parseInt(prompt("enter 1st number"));
+/*const a=parseInt(prompt("enter 1st number"));
 const b=parseInt(prompt("enter 2nd number"));
 let sum=a+b;
 if(a===b){
@@ -176,4 +176,85 @@ if(a===b){
 }
 else{
     alert(`${sum}`);
+}*/
+
+
+/*
+
+function multiplication(a){
+    for(i=1;i<=10;i++){
+        console.log(a*i);
 }
+}
+multiplication(2);
+
+const m=(a)=>{
+    for(i=1;i<=10;i++){
+        console.log(a*i);
+}
+}
+m(2);
+
+
+const areak=(l,b)=>{
+    return (l*b);
+}
+const rect=areak(2,3);
+console.log({rect});
+
+//WAP 
+//123=321
+const number=(a)=>{
+    const str=String(number);
+    let newNum="";
+    for(i=str.length;i>=0;i--){   12345
+       newNum+=str[i];
+
+    }
+    return newNum;
+};
+const reskkk=number(number(1234));
+console.log(reskkk); */
+
+//10000
+/*const num=(a)=>{
+    const str=String(num);
+    let newNum="";
+    for(i=str.length;i>=0;i--){
+        newNum+=str[i];
+        let newString=newNum;
+        let counter=0;
+        while(counter!=3)
+        if(newString==0){
+            counter++;
+        }}
+        if(counter==3){
+            newString=newString+",";
+            newNum=newString;
+        }
+    }
+    return newNum;
+const reskkk=number(num(10000));
+console.log(reskkk);
+*/
+
+/*
+const co=(n)=>{
+    const string=string(n);
+    let newString=""
+    reversestring="";
+    counter=0;
+    for(let i=string.length-1;i>=0;i--){
+        console.log({counter,newString});
+        if(counter==3){
+            newString+=
+        }
+    }
+}
+
+
+write a js function that converts reglar text to proper case
+that converts long text to ... format 
+that replaces c++ to mern ==> 
+"raktim is c++ teacher. he is teaching us c++ course from 20th jan"
+"raktim is c++ teacher. he is....."*/
