@@ -238,23 +238,59 @@ const reskkk=number(num(10000));
 console.log(reskkk);
 */
 
-/*
-const co=(n)=>{
-    const string=string(n);
-    let newString=""
-    reversestring="";
+
+const thousands=(n)=>{
+    const string=String(n);
+    let newString="";
+    let reversestring="";
     counter=0;
     for(let i=string.length-1;i>=0;i--){
         console.log({counter,newString});
         if(counter==3){
-            newString+=
+            newString+=",";
+            counter=0;
         }
+        newString+=string[i];
+        counter++;
     }
-}
+    for(let i=newString.length-1;i>=0;i--){
+        reversestring+=newString[i];
 
+}
+return reversestring;
+};
+const reversestring=thousands(1000);
+console.log(reversestring);
+
+
+
+const kuber=(thou)=>{
+    const str=String(thou);
+    let newStr="";
+    let rev="";
+    let countk=0;
+    for(let i=str.length-1;i>=0;i--){
+    if(countk==3){
+        newStr+=",";
+        countk=0;
+    }
+    countk++;
+    newStr+=str[i];
+}
+for(let i=newStr.length-1;i>=0;i--){
+    rev+=newStr[i];
+
+}
+return rev;
+};
+const practice=kuber(100000);
+console.log(practice);
+
+/*
 
 write a js function that converts reglar text to proper case
 that converts long text to ... format 
 that replaces c++ to mern ==> 
 "raktim is c++ teacher. he is teaching us c++ course from 20th jan"
 "raktim is c++ teacher. he is....."*/
+
