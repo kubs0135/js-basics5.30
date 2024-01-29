@@ -238,7 +238,7 @@ const reskkk=number(num(10000));
 console.log(reskkk);
 */
 
-
+/*
 const thousands=(n)=>{
     const string=String(n);
     let newString="";
@@ -262,8 +262,8 @@ return reversestring;
 const reversestring=thousands(1000);
 console.log(reversestring);
 
-
-
+*/
+/*
 const kuber=(thou)=>{
     const str=String(thou);
     let newStr="";
@@ -288,9 +288,61 @@ console.log(practice);
 
 /*
 
-write a js function that converts reglar text to proper case
-that converts long text to ... format 
-that replaces c++ to mern ==> 
+1)write a js function that converts reglar text to proper case
+2)that converts long text to ... format 
+3)that replaces c++ to mern ==> 
 "raktim is c++ teacher. he is teaching us c++ course from 20th jan"
 "raktim is c++ teacher. he is....."*/
 
+const properCase1=(fname)=>{
+    let strName=String(properCase1);
+    strName=strName.toLowerCase();
+    const stringNew1="";
+    let ran="";
+    let count=0;
+    for(let i=0;i<=strName.length;i++){ 
+        if(count==0){
+            ran=strName[i].toUpperCase();
+            stringNew1+=ran;
+            count++;
+        }
+        else{
+            stringNew1+=strName[i];
+        }
+        if(strName[i]==" "){
+            count=0;
+        }
+    }
+    return stringNew1;
+
+};
+const prop=properCase1(KUBER KATHAYAT);
+console.log(prop);
+
+//2)
+/*
+const class1=(descrip)=>{
+    const n=String(class1);
+    let newSt="";
+    if(n.length>27){
+        for(let i=0;i<27;i++){
+            newSt+=n[i];
+        }
+        newSt+="....";
+    }
+    return newSt;
+};
+const tyo=class1(raktraktim is c++ teacher. he is teaching us c++ course from 20th janim);
+console.log(tyo);
+
+//3)
+
+const abc=(a)=>{
+    let abc=String(abc);
+    let ab="";
+    ab=abc.replace(c++,MERN);
+    return ab;
+};
+const ka=abc(raktim is c++ teacher. he is teaching us c++ course from 20th jan);
+console.log(ka);
+/*/
