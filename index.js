@@ -217,26 +217,6 @@ const reskkk=number(number(1234));
 console.log(reskkk); */
 
 //10000
-/*const num=(a)=>{
-    const str=String(num);
-    let newNum="";
-    for(i=str.length;i>=0;i--){
-        newNum+=str[i];
-        let newString=newNum;
-        let counter=0;
-        while(counter!=3)
-        if(newString==0){
-            counter++;
-        }}
-        if(counter==3){
-            newString=newString+",";
-            newNum=newString;
-        }
-    }
-    return newNum;
-const reskkk=number(num(10000));
-console.log(reskkk);
-*/
 
 /*
 const thousands=(n)=>{
@@ -295,9 +275,9 @@ console.log(practice);
 "raktim is c++ teacher. he is....."*/
 
 const properCase1=(fname)=>{
-    let strName=String(properCase1);
+    let strName=String(fname);
     strName=strName.toLowerCase();
-    const stringNew1="";
+    let stringNew1="";
     let ran="";
     let count=0;
     for(let i=0;i<=strName.length;i++){ 
@@ -316,9 +296,9 @@ const properCase1=(fname)=>{
     return stringNew1;
 
 };
-const prop=properCase1('KUBER KATHAYAT');
+const prop=properCase1("KUBER KATHAYAT");
 console.log(prop);
-
+/*
 //2)
 
 const class1=(descrip)=>{
@@ -340,9 +320,95 @@ console.log(tyo);
 const abc=(a)=>{
     let abc=String(abc);
     let ab="";
-    ab=abc.replace(c++,MERN);
+    ab=abc.replaceAll(c++,MERN);
     return ab;
 };
 const ka=abc(raktim is c++ teacher. he is teaching us c++ course from 20th jan);
-console.log(ka);
-/*/
+console.log(ka);*/
+
+
+//write a js function that validate is the user input string is email or not
+//that counts number of vowels used in the string
+
+const email=(em)=>{
+    const ema=em.toLowerCase();
+    if(ema.includes("@")){
+        console.log("it is an email");
+    }
+};
+email("k@gmail.com");
+
+const vowels1=(a)=>{
+    let count=0;
+    const ab=a.toLowerCase();
+    for(let i=0;i<=ab.length;i++){
+        if(ab[i]=="a"||ab[i]=="e"||ab[i]=="i"||ab[i]=="o"||ab[i]=="u"){
+            count++;
+        }
+
+    }
+    return count;
+};
+const ret=vowels1("kuber");
+console.log(ret);
+
+//types of functions
+//default 
+//parametarized
+//implicit 
+//explicit
+//anonymous function
+//IIFE
+//Closer
+//inline function
+//Callback function
+
+//implicit
+// const sum=(a,b)=>a+b;
+
+// //explicit
+// const sum1=(a,b)=>{
+//     return a+b;
+// };
+
+// //anonymous
+// (function (){
+//     return "helloKk";
+// });
+// //inline
+// const a=function(){};
+
+// //IIFE immediately invoked functional expression
+
+// (function (){
+//     return "helloKk";
+// })();
+// //ex-scripts for devOps engeenirng
+
+// //closure
+
+// const getEnvVariables=()==>{
+
+//};
+
+//Callback function
+
+const print=(name1)=>{
+    return `print is ${name1}`;
+};
+
+const mainFnc=(fname1,lname1,cb)=>{
+    const name1=fname1.concat(" ",lname1);
+    return cb(name1);
+};
+
+const resu=mainFnc("kuber","kathayat",print);
+console.log(resu);
+
+
+//write a js function that checks if the password is valid or not
+//validate rules are
+//at eleast 1 lowercase character
+//1 uppercase
+//1 number, 1 sumbol, length>=8
+//output: true or false
