@@ -316,11 +316,11 @@ const properCase1=(fname)=>{
     return stringNew1;
 
 };
-const prop=properCase1(KUBER KATHAYAT);
+const prop=properCase1('KUBER KATHAYAT');
 console.log(prop);
 
 //2)
-/*
+
 const class1=(descrip)=>{
     const n=String(class1);
     let newSt="";
