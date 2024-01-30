@@ -280,7 +280,7 @@ const properCase1=(fname)=>{
     let stringNew1="";
     let ran="";
     let count=0;
-    for(let i=0;i<=strName.length;i++){ 
+    for(let i=0;i<strName.length;i++){ 
         if(count==0){
             ran=strName[i].toUpperCase();
             stringNew1+=ran;
@@ -408,7 +408,85 @@ console.log(resu);
 
 //write a js function that checks if the password is valid or not
 //validate rules are
-//at eleast 1 lowercase character
+//at eleast 1 lowercase character  //KUBER > kuber Kkuber
 //1 uppercase
 //1 number, 1 sumbol, length>=8
 //output: true or false
+
+// const pw=(p)=>{
+//     let pp=p.toLowerCase();
+//     let count=0;
+//     for(let i=0;i<pp.length;i++){
+        
+//         if(p[i]==pp[i]){
+//            count++;
+            
+//         }
+//            else
+//            {
+//             count++;
+            
+//         }
+//         if(count==2){
+//             return true;
+//         }
+//         if(count<2&&count>2){
+//             return false;
+//         }
+
+//     }
+   
+    
+    
+// };
+// const pass=pw("KUBER");
+// console.log(pass);
+
+const palind=(strp)=>{
+    let newS=strp;
+    for(let i=strp.length-1;i<=strp;i--){
+        newS+=strp[i];
+    }
+    if(newS===palind){
+        console.log("its palindrome");
+    }
+    else{
+        console.log("not palindrome");
+        }
+
+};
+palind("kub");
+
+
+const temp=(temp,type="c")=>{
+    if(type=="f"){
+        return (temp-32)*5/9;
+    }
+    else{
+        return temp*(9/5)+32;
+    }
+};
+const t1=temp(20);
+console.log(t1);
+const t2=temp(60,"f");
+console.log(t2);
+
+//CRUD(create,read,update,delete);
+
+const person={
+    name:"kuber kathayat",
+    birthyear:2040,
+    isMale:true,
+    age:function(){
+        return 2080-this.birthyear;
+    },
+    calcAge:()=>{
+        return 2080-person.birthyear;
+    },
+
+};
+console.log(person.name);
+console.log(person.age());
+console.log(person.calcAge());
+
+//creste your own objects for car,laptop,tv and doCRUD operation
