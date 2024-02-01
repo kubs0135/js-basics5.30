@@ -483,10 +483,108 @@ const person={
     calcAge:()=>{
         return 2080-person.birthyear;
     },
-
 };
 console.log(person.name);
 console.log(person.age());
 console.log(person.calcAge());
 
-//creste your own objects for car,laptop,tv and doCRUD operation
+//create your own objects for car,laptop,tv and doCRUD operation
+// const kuber={
+//     name:"kuber",
+//     car:()=>{
+//         color="red";
+//         wheels=4;
+//         nameC="Tesla";
+//         return color;
+//     },
+//     laptop:()=>{
+//         name="acer";
+//         color="grey";
+//     },
+//     tv:()=>{
+//         type="LED";
+//         name="CG";
+        
+//     },
+
+
+
+// };
+// console.log(kuber.car());
+
+const ob={
+    name:"kuber",
+    pw:"1234",
+    email:"k@gm.com",
+};
+//spread operator
+const {pw,...rest}=ob; //object destructuring
+console.log({rest});
+
+const kk={
+    name:"dkcn",
+    nn:"dcds",
+
+};
+const{name}=kk;
+console.log(kk.name);
+
+const userRole=["user","vendor"];
+const sysRole=["admin","vendor"];
+const checkRole=(ur,sr)=>sr.some((role)=>ur.includes(role));
+    console.log(checkRole(userRole,sysRole));
+
+    let food=['noodle','pasta','icecream'];
+    let foods=['fries','ice-cream','pizza'];
+    const checkFood=(f,fs)=>fs.some((role)=>f.includes(role));
+    console.log(checkFood(food,foods));
+    //compare two arrays and return bool result
+    //some()->boolean
+    //includes()->bolean
+
+// const checkRole=(userRole,sysRole)=>{
+//     const result=master.map((e1)=>{
+//         // aVal && sysRole[aIndex]);
+//         return sysRole.includes(e1);
+    
+//     //const a=console.log(userRole[0]==sysRole[0]);
+//     //const b=console.log(userRole[1]==sysRole[1]);
+//     //console.log(result);
+//     //console.log(a,b);
+// });
+// return result;
+// };
+// console.log(checkRole(userRole,sysRole));
+
+//const slugger=(sentence)=>sentence.toString().toLowerCase().replaceAll(/?@#$%^&)
+//write a js function that creates a sum of numbers from 1 to 10
+//eg [1,2,3,4,5,6,7,8,9,10]=>55
+
+
+const arr=[1,2,3,4,5,6,7,8,9,10];
+let sum =0;
+arr.forEach((el)=>sum+=el);
+console.log(sum);
+
+//reduce mathi hai apply
+
+const getSum=(arr)=>arr.reduce((prev,curr)=>prev+curr,0);
+    const resp=getSum([1,2,3,4,5,6,7,8,9,10]);
+    console.log({resp});
+
+
+//write a js function that works as a pagination
+
+const arrr=["kuber","ruchi","anima","sumit","samundra","raktim"];
+const page=1; //dynaimc
+const limit=2; //dynamic
+
+//example 
+//page 1=>["kuber","ruchi"]
+//page 2=>["anima","sumit"]
+//page 3=>["samundra","raktim"]
+//page 4=>[]
+
+
+//immulate js
+//Date
