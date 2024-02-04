@@ -512,6 +512,48 @@ console.log(person.calcAge());
 // };
 // console.log(kuber.car());
 
+
+let prod={
+    name:"headphones",
+    price:83.7,
+    discount:"7%",
+};
+const checkDiscount=(obj)=>{
+    return Object.hasOwn(obj,"discount")?`already discounted by ${obj.discount}`:"no discount found";
+    ;
+};
+const res=checkDiscount(prod);
+console.log(res);
+const findDiscount=(obj)=>{
+    delete obj.discount;
+    const discountPercent=obj.price>100?10:7;
+    obj.discount=`${discountPercent}%`;
+    obj.price>100?(obj.discount="10%"):(obj.discount="7%");
+    obj.price=obj.price-(discountPercent/100)*obj.price;
+    return obj;
+};
+console.log(findDiscount(prod));
+
+//ARRAY
+//CRUD
+
+const newAr=[];
+
+//read
+const cars=["bmw","tesla","toya"];
+console.log({first:cars[1]});
+
+//update
+cars[0]="djbc";
+console.log(cars);
+
+//delete
+
+delete cars[0];
+console.log(cars);
+
+
+
 const ob={
     name:"kuber",
     pw:"1234",
@@ -586,5 +628,33 @@ const limit=2; //dynamic
 //page 4=>[]
 
 
-//immulate js
+
+//immutable js
+//Map,filter,reduce,every,some
+
+//write a js function that checks username and password in the database and check if the password match or not;return bool CSSMathValue
+
+// const db=[{username:"kuber",password:"pass1"},
+//         {username:"raktim",password:"pass2"},
+//         {username:"binita",password:"pass3"},
+//         {username:"santosh",password:"pass4"},
+//         {username:"aditya",password:"pass5"},
+// ];
+// const logIn=(un,pw)=>{
+//     const result=db.find((username)=>data.username===un);
+//     if (!result)
+
+
+
+
 //Date
+
+const now=new Date();
+const kk123=now.toISOString();
+const kk124=now.toUTCString();
+const kk125=now.toTimeString();
+console.log(kk123,kk124);
+console.log(kk125);
+
+
+
